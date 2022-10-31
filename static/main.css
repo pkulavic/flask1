@@ -1,0 +1,23 @@
+html {
+    font-family: courier;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.subject {
+    width: max-content;
+}
+
+.subject:hover {
+    background-color: yellow;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
