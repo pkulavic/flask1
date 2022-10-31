@@ -10,6 +10,9 @@ def index():
 def parker():
     return home()
 
+@app.route('/parker/official')
+def parker_official():
+    return home()
 
 def home():
     return render_template("home.html")
