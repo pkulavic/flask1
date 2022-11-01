@@ -1,0 +1,26 @@
+{% extends 'home.jinja' %}
+{% block content %}
+<div class="sudoku-main">
+    {% for r in range(9) %}
+        <div class="sudoku-row">
+        {% for c in range(9) %}
+            {% set val = game.array[9 * r + c].value %}
+            {% if val != 0 %}
+                <div class="sudoku-cell"><div class="puzzle-value">{{ val }}</div></div>
+            {% endif %}
+            {% if val == 0 %}
+                <div class="sudoku-cell blank"><div class="puzzle-value">k</div> </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+<div class="side">
+    <div class="side" id="easy"><a href="{{ url_for('sudoku_easy') }}">Easy</a></div>
+    <div style="display: inline-block"><a href="{{ url_for('sudoku_hard') }}">Hard</a></div>
+</div>
+<div class="subject">
+        <a href="https://www.github.com/pkulavic" target="_blank">GitHub</a>
+</div>
+
+{% endblock %}

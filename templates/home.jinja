@@ -9,7 +9,7 @@
 
 <body>
 
-    <a href={{ url_for('index') }}><div class="name">Parker Kulavic</div></a>
+    <a href="{{ url_for('index') }}"><div class="name">Parker Kulavic</div></a>
     <div class="subject">
         Interests
     </div>
@@ -17,9 +17,12 @@
         About
     </div>
     <div class="subject">
-        Projects
+        <a href="{{ url_for('parker_sudoku') }}">
+            Projects
+        </a>
     </div>
-
+    {% block content %}
+    {% endblock %}
 </body>
 </html>
 

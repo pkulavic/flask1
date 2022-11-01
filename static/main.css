@@ -1,15 +1,12 @@
 html {
     font-family: courier;
 }
-
 .name {
     font-size: 24px;
 }
-
 .subject {
     width: max-content;
 }
-
 .subject:hover {
     background-color: yellow;
 }
@@ -17,11 +14,48 @@ html {
 a {
     color: black;
 }
-
 a:link {
     text-decoration: none;
 }
 a:visited {
     text-decoration: none;
     color: inherit;
+}
+.sudoku-main {
+    width: 430px;
+    height: 423px;
+    border-color: black;
+    border: 4px solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .sudoku-row {
+
+} */
+.sudoku-cell {
+    width: 45px;
+    height: 45px;
+    border: 1px solid gray;
+    display: inline-flex;
+    margin-bottom: -4px;
+    /* margin-left: -10px; */
+    justify-content: center;
+    align-items: center;
+}
+.blank {
+    color: white;
+}
+.puzzle-value {
+    position: absolute;
+    font-size: large;
+}
+.side {
+    display: inline-block;
+}
+#easy {
+    height: 20px;
+}
+.grid-container {
+    display: grid;
 }
