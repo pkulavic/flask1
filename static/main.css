@@ -59,3 +59,13 @@ a:visited {
 .grid-container {
     display: grid;
 }
+.clue {
+    background-color: lightgray;
+}
+.highlighted {
+    background-color: yellow;
+    color: yellow;
+}
+.clue-highlighted {
+    background-color: #E6C707;
+}

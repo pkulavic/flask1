@@ -6,10 +6,10 @@
         {% for c in range(9) %}
             {% set val = game.array[9 * r + c].value %}
             {% if val != 0 %}
-                <div class="sudoku-cell"><div class="puzzle-value">{{ val }}</div></div>
+                <div class="sudoku-cell clue"><div class="puzzle-value">{{ val }}</div></div>
             {% endif %}
             {% if val == 0 %}
-                <div class="sudoku-cell blank"><div class="puzzle-value">k</div> </div>
+                <div class="sudoku-cell blank"><div class="puzzle-value">0</div> </div>
             {% endif %}
         {% endfor %}
         </div>
@@ -23,4 +23,7 @@
         <a href="https://www.github.com/pkulavic" target="_blank">GitHub</a>
 </div>
 
+<script src="{{ url_for('static', filename='sudoku.js') }}"></script>
+
 {% endblock %}
+
