@@ -28,7 +28,7 @@ def sudoku(difficulty="hard"):
     if difficulty == "easy":
         b.remove_clues(50)
     elif difficulty == "hard":
-        b.remove_clues(60)
+        b.remove_clues(62)
     return render_template("sudoku.jinja", game=b, difficulty=difficulty)
 
 @app.route('/parker/sudoku/hard')

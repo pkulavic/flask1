@@ -43,6 +43,9 @@ a:visited {
     justify-content: center;
     align-items: center;
 }
+/* .puzzle-value {
+    font-size: 50px;
+} */
 .blank {
     color: white;
 }
@@ -60,12 +63,17 @@ a:visited {
     display: grid;
 }
 .clue {
-    background-color: lightgray;
+    background-color: #e6e6e6;
+    color: black;
 }
 .highlighted {
-    background-color: yellow;
-    color: yellow;
+    background-color: #ffda00;
+    color: #ffda00;
 }
 .clue-highlighted {
-    background-color: #E6C707;
+    background-color: #e6c500;
+    color: black;
+}
+.filled {
+    color: black;
 }
