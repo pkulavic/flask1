@@ -23,7 +23,14 @@
         <a href="https://www.github.com/pkulavic" target="_blank">GitHub</a>
 </div>
 
+
 <script src="{{ url_for('static', filename='sudoku.js') }}"></script>
 
 {% endblock %}
 
+{% block message %}
+<p id="message-label"><a>Send me a message!</a></p>
+<p id="message-text">hi</p>
+<p id="message-notes"></p>
+<script src="{{ url_for('static', filename='message.js') }}"></script>
+{% endblock %}

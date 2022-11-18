@@ -3,9 +3,17 @@ from engine import SudokuBoard
 
 app = Flask(__name__)
 
+UNDER_DEVELOPMENT: bool = True
+
 @app.route('/')
 def index():
-    return redirect(url_for('parker'))
+    if UNDER_DEVELOPMENT:
+        return dev()
+    else:
+        return redirect(url_for('parker'))
+
+def dev():
+    return render_template('coming-soon.jinja')
 
 @app.route('/parker')
 def parker():
