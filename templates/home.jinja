@@ -2,6 +2,17 @@
 <html>
 
 <head>
+    {# Meta tags for SEO and best practices #}
+    <meta name="charset" content="UTF-8">
+    <meta name="author" content="Parker Kulavic">
+    <meta name="description" content="A website coded and designed by Parker">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    {# Open Graph Protocol tags #}
+    <meta property="og:title" content="kulavic.com">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ url_for('static', filename='craiyon_143242_golden_gate_bridge_parker_kulavic.png') }}">
+    <meta property="og:url" content="{{ url_for('index') }}">
+    
     <link rel="stylesheet" type="text/css" href={{ url_for('static', filename="main.css") }}>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>www.Kulavic.com</title>
