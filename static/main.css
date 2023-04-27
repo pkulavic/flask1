@@ -91,3 +91,17 @@ footer {
     color:lightgray;
     font-size: small;
 }
+
+
+/* Define a grid container with 3 columns and 3 rows */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  /* Define the style for each grid item (i.e. square) */
+  .grid-item {
+    background-color: #333;
+    border: 1px solid #555;
+  }
