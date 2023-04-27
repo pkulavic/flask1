@@ -8,7 +8,7 @@ UNDER_DEVELOPMENT: bool = True
 @app.route('/')
 def index():
     if UNDER_DEVELOPMENT:
-        return dev()
+        return render_template('index.html')
     else:
         return redirect(url_for('parker'))
 
